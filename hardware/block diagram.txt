@@ -1,0 +1,9 @@
+BLOCK DIAGRAM – WAKEWISE
+
+[Vibration Sensor] ----\
+                         \
+                          --> [Microcontroller] --> [Vibration Motor]
+                         /
+[Motion Sensor] --------/
+
+[Battery] --> Powers all components

@@ -1,0 +1,19 @@
+COMPONENTS LIST – WAKEWISE PROJECT
+
+1. Vibration Sensor (SW-420)
+   Detects sudden movement or prolonged inactivity.
+
+2. Motion Sensor (MPU6050)
+   Detects head tilt and nodding behavior.
+
+3. Microcontroller (Arduino Nano / ESP32)
+   Processes sensor data and controls alert logic.
+
+4. Vibration Motor
+   Generates vibration alert to wake the driver.
+
+5. Rechargeable Battery (3.7V Li-ion)
+   Supplies power to the system.
+
+6. Smart Sunglasses Frame
+   Houses all components in a wearable form.
