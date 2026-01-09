@@ -1,27 +1,28 @@
-# WakeWise – Adaptive Smart Sunglasses for Driver Drowsiness Detection
+# WakeWise – Smart Sunglasses Based Driver Drowsiness Detection Using Eye Blink and Vibration Alert
 
 ## Abstract
-Driver drowsiness is a major cause of road accidents, especially during long and monotonous driving. Existing systems often rely on cameras or loud alarms, which can be distracting and raise privacy concerns. WakeWise introduces a smart sunglasses–based driver drowsiness detection system using vibration and motion sensing. The system monitors head movement patterns and detects abnormal inactivity or nodding behavior that indicates micro-sleep. When drowsiness is detected, a pattern-based vibration alert is triggered to wake the driver in a non-intrusive manner. The system is lightweight, wearable, low-power, and privacy-friendly.
+Driver drowsiness is one of the leading causes of road accidents, especially during long-distance and night-time driving. One of the earliest indicators of drowsiness is prolonged eye closure and irregular blink patterns. WakeWise is a smart sunglasses–based driver drowsiness detection system that continuously monitors the driver’s eye activity using an eye blink sensor. When abnormal eye closure is detected, the system activates a vibration alert to wake the driver. The proposed system is wearable, non-intrusive, low-power, and privacy-friendly, making it suitable for real-time driver safety applications.
 
 ## Project Overview
-WakeWise is designed as a wearable driver safety system integrated into a pair of sunglasses. Sensors embedded in the frame continuously monitor the driver’s head movement during driving. The system learns the driver’s normal movement behavior and compares it with real-time sensor data. When abnormal inactivity or nodding patterns are detected for a predefined duration, the microcontroller triggers a vibration motor mounted on the glasses. This vibration alert helps the driver regain alertness without using sound or visual distraction, improving driving safety.
+WakeWise is designed as a wearable safety system integrated into a pair of smart sunglasses. An infrared (IR) eye blink sensor mounted on the glasses frame continuously detects the driver’s eye opening and closing patterns. During normal driving conditions, blinking occurs at regular intervals. When the driver becomes drowsy, the eyes remain closed for a longer duration, indicating micro-sleep.
+
+The eye blink sensor output is processed by a microcontroller that measures the eye closure duration. If the eyes remain closed beyond a predefined safe threshold, the system identifies the condition as drowsiness and triggers a vibration motor mounted on the sunglasses. The vibration alert provides immediate tactile feedback to wake the driver without using sound or visual distraction, thereby improving road safety.
 
 ## Hardware Components
-- Vibration Sensor (SW-420)
-- Motion Sensor (MPU6050)
+- IR Eye Blink Sensor
 - Microcontroller (Arduino Nano / ESP32)
 - Vibration Motor
 - Rechargeable Battery
 - Smart Sunglasses Frame
 
 ## How It Works
-1. Sensors monitor head movement in real time.
-2. Normal movement behavior is observed.
-3. Abnormal inactivity or nodding is detected.
-4. Vibration alert is triggered to wake the driver.
+1. Eye blink sensor continuously monitors eye activity.
+2. Normal blinking is identified as short eye closures.
+3. Prolonged eye closure indicates drowsiness.
+4. Vibration alert is activated to wake the driver.
 
 ## Future Scope
-- Eye blink detection
-- Mobile application integration
-- Emergency alert system
-- AI-based fatigue prediction
+- Adaptive blink threshold for individual drivers
+- Bluetooth-based mobile alert system
+- Emergency contact notification
+- AI-based fatigue detection
